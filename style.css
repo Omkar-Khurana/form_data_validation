@@ -1,0 +1,139 @@
+body {
+	background: linear-gradient(-45deg, #000000, #656565, #ff962c, #042961);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+#maindiv {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: black;
+  color: whitesmoke;
+  border-radius: 10px;
+  position: absolute;
+  width: 60%;
+  height: 70%;
+  padding: 10vh;
+  top: 5%;
+  left: 15%;
+}
+
+form,
+#labels,
+#inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+form{
+    padding-left: 1vh;
+}
+
+#labels,
+#inputs {
+  flex-direction: column;
+}
+
+#formelements{
+    display: flex;
+    flex-direction: column;
+}
+
+.elementdivs{
+  display:flex;
+  flex-direction: row;
+  justify-items: baseline;
+}
+
+.elementdivs > input, #gender{
+  position: absolute;
+  left: 23%;
+}
+
+.elementdivs > span{
+  position: absolute;
+  left:38.5%;
+  padding-top: 6px;
+  border-color: red;
+  border-width: 2px;
+}
+
+input[type="submit"] {
+    border: 1px solid #0A3D5B;
+    background-color: transparent;
+    color: #FF6600;
+    margin: 1vh 0vh 0vh 1.2vh;
+    padding: 1vh;
+    width: 84%;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+input:focus {
+    outline: none;
+}
+
+input#submit {
+    background-image: linear-gradient(0, #0A3D5B, #0A3D5B);
+    background-size: 0;
+    transition: .8s;
+    background-repeat: no-repeat;
+}
+
+input#submit:hover {
+    background-size: 100%;
+    color: #fff;
+}
+#gender{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#heading {
+  margin: 5vh;
+  padding: 1vh;
+}
+
+#heading1 {
+  margin: 50px 0px;
+  font-size: 4vh;
+}
+
+input {
+  padding: 0.55vh;
+}
+
+label {
+  padding: 0vh 0vh 1.5vh 0vh;
+  margin: 1vh;
+}
+
+#nikelogo {
+  width: 50vh;
+}
+
+#rightside {
+  background-image: url(images//nike_logo.jpeg);
+  width: 50%;
+  height: 50%;
+}

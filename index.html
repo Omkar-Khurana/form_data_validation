@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="d-flex flex-column justify-content-center w-100 h-100">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <div id="maindiv">
+                <div id="leftside">
+                  <img
+                    src="images//nike.png"
+                    alt="logo"
+                    width="60px"
+                    height="20px"
+                  /><br />
+                  <span id="heading">
+                    <br />
+                    <span id="heading1"> Create your NIKE Account</span><br />
+                    <span id="heading2">to continue to the world of NIKE</span><br />
+                    <br /><br />
+                  </span>
+                  <form action="submit.html" method="get" id="reservation_form">
+                    <div id="formelements">
+                      <div id="namediv" class="elementdivs">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="John Doe" />
+                        <span></span>
+                      </div>
+                      <div id="emaildiv" class="elementdivs">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="johndoe@gmail.com" />
+                        <span></span>
+                      </div>
+                      <div id="genderdiv" class="elementdivs">
+                        <label for="gender">Gender:</label>
+                        <div id="gender">
+                          <input type="radio" id="male" name="gender" value="male">
+                          <label for="male">Male</label>
+                          <input type="radio" id="female" name="gender" value="female">
+                          <label for="female">Female</label>
+                        </div>
+                      </div>
+                      <div id="dobdiv" class="elementdivs">
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" name="date" id="dob" />
+                        <span></span>
+                      </div>
+                      <div id="phonediv" class="elementdivs">
+                        <label for="phone">Phone Number:</label>
+                        <input type="text" name="phone" id="phone" placeholder="999-999-9999" />
+                        <span></span>
+                      </div>
+                      <div id="passworddiv" class="elementdivs">
+                        <label for="password">Password:</label>
+                        <input type="password" name="pass" id="pass" placeholder="********"/>
+                        <span></span>
+                      </div>
+                      <div id="repassworddiv" class="elementdivs">
+                        <label for="repassword">Re-Enter Password:</label>
+                        <input type="text" name="repass" id="repass" placeholder="********"/>
+                        <span></span>
+                      </div>
+                    </div>
+                    <input type="submit" value="submit" id="submit" />
+                  </form>
+                </div>
+                <div id="rightside">
+                  <img src="images//nike_logo.jpeg" id="nikelogo" />
+                </div>
+              </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
